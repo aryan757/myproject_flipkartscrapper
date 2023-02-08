@@ -147,5 +147,8 @@ def create_figure():
     axis.scatter(xs, ys)
     return fig
 
+#if __name__ == "__main__":
+   # app.run()  # running the app on the local machine on port 8000
 if __name__ == "__main__":
-    app.run()  # running the app on the local machine on port 8000
+    port = 50
+    app.run(host='127.0.0.1', port=port)
